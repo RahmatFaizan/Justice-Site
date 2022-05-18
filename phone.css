@@ -1,0 +1,174 @@
+/*  */
+
+/* ---- --- 1200 --- ---- */
+
+@media screen and (max-width: 1200px) {
+  /* --- Navbar --- */
+
+  .navbar {
+    width: 910px;
+  }
+
+  /* Practice Area */
+
+  .prac-justice-width {
+    max-width: 920px;
+  }
+}
+
+/* ---- --- 990 --- ---- */
+
+@media screen and (max-width: 990px) {
+  /* --- Navbar --- */
+
+  .navbar {
+    width: 685px;
+    height: 70px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Home */
+
+  .home::before {
+    opacity: 0.4;
+  }
+
+  .home-heading {
+    font-size: 38px;
+  }
+
+  .home-detail {
+    width: 280px;
+    padding: 190px 0 0 0;
+    margin: 0 117px 0 auto;
+  }
+
+  .home-para {
+    margin: 25px 0 0 0;
+  }
+
+  .justice-btn {
+    margin-left: 0;
+  }
+
+  /* Practice Area */
+
+  .prac-area-div1 {
+    display: block;
+  }
+
+  .prac-justice-width {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .far {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .law {
+    width: 100%;
+  }
+
+  .prac-area-btn {
+    margin-left: 42px;
+  }
+
+  .prac-area-heading {
+    font-size: 30px;
+  }
+
+  .prac-area-div1 {
+    padding-top: 55px;
+  }
+
+  .prac-area-div2 {
+    display: block;
+    padding: 50px 0;
+  }
+
+  .exp-txt {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .exp {
+    width: 100%;
+  }
+
+  .more-prac-area {
+    margin: 30px 10px 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* Navbar */
+
+  .navbar {
+    width: 500px;
+  }
+
+  /* Home */
+
+  .home-detail {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .home-para {
+    margin: 25px 0 0 8px;
+    color: var(--bg-black);
+  }
+
+  /* Practice Area */
+  .prac-justice-width {
+    max-width: 535px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .prac-area-para {
+    margin: 20px 0 0 0px;
+  }
+
+  .prac-area-btn {
+    margin-left: 0;
+  }
+
+  .exp-detail {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Navbar */
+
+  .navbar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  /* Home */
+
+  .home-detail {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 212px 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sm-ul {
+    width: 100%;
+  }
+}
