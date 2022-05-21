@@ -1,6 +1,7 @@
 /* 
  */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +15,8 @@
   --text-color: #b9b9b9;
   --bg-white: #fff;
   --bg-black: #111;
-  --bg-black-600: rgba(17, 17, 17, 0.6);
+  --bg-black-900: rgba(17, 17, 17, 0.6);
+  --bg-black-600: #2d2d34;
   --bg-light-grey: #eee;
   --bg-primary: #b49c73;
   --bg-primary-hover: #b9a27a;
@@ -22,6 +24,10 @@
   --gray-400: #818181;
   --bg-body: #37373f;
   --bg-slider: #2d2d34;
+  --font-size: 50px;
+  --fixed-font-size: 50px;
+  --f-size-30: 30px;
+  --slider-btn-size: 40px;
 }
 
 .d-flex {
@@ -63,6 +69,7 @@
   visibility: hidden;
   transition: 0.4s;
   z-index: 901;
+  box-sizing: border-box;
 }
 
 .show-sm-navigation {
@@ -150,10 +157,10 @@ a.sm-sub-dropdown-a {
 
 span.sm-angle-down {
   font-size: 10px;
-  width: 30px;
-  height: 30px;
+  width: var(--f-size-30);
+  height: var(--f-size-30);
+  line-height: var(--f-size-30);
   border-radius: 50%;
-  line-height: 30px;
   text-align: center;
   border: 1px solid #b9a27a26;
   display: inline-block;
@@ -207,7 +214,7 @@ span.sm-angle-down {
   font-size: 14px;
   display: block;
   padding: 12px 16px;
-  color: var(--bg-black-600);
+  color: var(--bg-black-900);
   transition: all 0.3s;
   position: relative;
 }
@@ -354,7 +361,6 @@ span.sm-angle-down {
 
 .justice-btn {
   display: inline-block;
-  margin-left: 28px;
   margin-top: 25px;
   padding: 17px 32px;
   background-color: var(--bg-primary);
@@ -363,6 +369,10 @@ span.sm-angle-down {
   color: #fff;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.home-btn {
+  margin-left: 28px;
 }
 
 .justice-btn:hover {
@@ -391,7 +401,7 @@ span.sm-angle-down {
 }
 
 .prac-area-heading {
-  font-size: 50px;
+  font-size: var(--font-size);
   color: var(--bg-white);
   margin-bottom: 30px;
 }
@@ -472,7 +482,7 @@ span.sm-angle-down {
 
 .exp-txt {
   width: 400px;
-  font-size: 50px;
+  font-size: var(--font-size);
   color: white;
   margin-top: 20px;
 }
@@ -496,6 +506,7 @@ span.sm-angle-down {
 .exp-num {
   font-size: 88px;
   color: var(--bg-white);
+  font-weight: 300;
 }
 
 .exp-num span {
@@ -511,4 +522,228 @@ span.sm-angle-down {
 .exp-para {
   color: var(--text-color);
   line-height: 26px;
+}
+
+/* ---- --- Slider Section --- ---- */
+
+#img-slider {
+  padding: 30px 0;
+  background-color: var(--bg-black-600);
+  position: relative;
+}
+
+.slider-main-heading {
+  font-size: var(--font-size);
+  color: var(--bg-white);
+  margin: 50px 0;
+}
+
+.slider-main-heading strong {
+  color: var(--bg-primary);
+}
+
+/* --- -- Slider -- --- */
+
+.slider-text {
+  width: 340px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: var(--bg-white);
+  margin: 20px 0 15px;
+  line-height: 26px;
+  position: relative;
+}
+
+#box-polygon {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 60px;
+}
+
+.slider-user {
+  display: flex;
+  align-items: center;
+}
+
+img.slider-user-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.slider-user-para {
+  margin-left: 20px;
+}
+
+.s-para-1 {
+  color: var(--bg-white);
+}
+
+.s-para-2 {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.img-slider {
+  margin: 0 0 40px 0;
+}
+
+/*  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: initial !important;
+  margin: 40px 0 0 0 !important;
+}
+
+.slider-button-next,
+.slider-button-prev {
+  position: absolute;
+  bottom: -20px;
+  color: var(--bg-white);
+  min-width: var(--slider-btn-size);
+  height: var(--slider-btn-size);
+  line-height: var(--slider-btn-size);
+  text-align: center;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.slider-button-prev {
+  left: calc(50% - 44px);
+}
+
+.slider-button-next {
+  right: calc(50% - 44px);
+}
+
+:is(.slider-button-next, .slider-button-prev):hover {
+  color: var(--bg-primary);
+  background-color: var(--bg-white);
+  transform: translate(0, -2px);
+}
+.swiper-pagination-bullet {
+  background: var(--bg-primary) !important;
+}
+
+/* --- -- - More Experties - -- --- */
+
+.experties {
+  background-color: #37373f;
+  padding: 80px 0;
+}
+
+.experties-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experties-heading {
+  font-size: var(--font-size);
+  margin: 0 0 50px;
+  color: var(--bg-white);
+}
+
+.experties-heading strong {
+  color: var(--bg-primary);
+}
+
+.exp-card {
+  width: 255px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: var(--bg-white);
+  border-radius: 6px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+}
+
+.exp-card-4 {
+  margin-right: 0;
+}
+
+.experties-icones {
+  min-width: var(--fixed-font-size);
+  height: var(--fixed-font-size);
+  line-height: var(--fixed-font-size);
+  display: inline-block;
+  background: var(--bg-primary);
+  text-align: center;
+  border-radius: 50%;
+  color: var(--bg-white);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.exp-card-heading {
+  color: var(--bg-primary);
+  margin: 10px 0;
+}
+
+.exp-card-para {
+  color: var(--gray-400);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.exp-card-btn {
+  font-size: 14px;
+  color: var(--bg-black);
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.exp-card-btn span {
+  font-size: 10px;
+  margin-left: 10px;
+  padding: 4px 5px;
+  transition: 0.3s;
+}
+
+.exp-card-btn:hover {
+  color: var(--bg-primary);
+}
+
+.exp-card-btn:hover span {
+  background-color: var(--bg-primary);
+  color: var(--bg-white);
+}
+
+#target-dollar {
+  width: 22px;
+  margin-top: 8px;
+}
+
+#consultation {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 6px;
+  background: url(img/hero-bg-.png) no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+}
+
+.consultation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cons-heading {
+  font-size: 32px;
+  color: var(--bg-white);
+  width: 550px;
+  text-align: center;
 }

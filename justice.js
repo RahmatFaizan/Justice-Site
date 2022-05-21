@@ -64,3 +64,61 @@ angleDown.forEach((e) => {
     }
   });
 });
+
+/* --- -- Image SLider -- --- */
+
+// <!-- Swiper -->
+
+var swiper = new Swiper(".mySwiper", {
+  //
+
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+
+  //
+
+  loop: true,
+  loopFillGroupWithBlank: true,
+  grabCursor: true,
+  freeMode: true,
+  speed: 1500,
+
+  //
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  //
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  //
+
+  navigation: {
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
+  },
+
+  //
+
+  breakpoints: {
+    770: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+    },
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+    },
+  },
+
+  //
+});

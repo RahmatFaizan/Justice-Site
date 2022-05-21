@@ -3,16 +3,29 @@
 /* ---- --- 1200 --- ---- */
 
 @media screen and (max-width: 1200px) {
+  :root {
+    --font-size: 30px;
+  }
   /* --- Navbar --- */
 
   .navbar {
     width: 910px;
   }
 
-  /* Practice Area */
+  /* --- Practice Area --- */
 
-  .prac-justice-width {
+  /* .prac-justice-width {
     max-width: 920px;
+  } */
+
+  .justice-width {
+    max-width: 920px;
+  }
+
+  /* --- Image Slider --- */
+
+  .slider-text {
+    width: 280px;
   }
 }
 
@@ -64,9 +77,12 @@
     display: block;
   }
 
-  .prac-justice-width {
-    max-width: 650px;
-    margin: 0 auto;
+  .justice-width {
+    max-width: 700px;
+  }
+
+  .exp-detail {
+    width: 100%;
   }
 
   .far {
@@ -82,10 +98,6 @@
     margin-left: 42px;
   }
 
-  .prac-area-heading {
-    font-size: 30px;
-  }
-
   .prac-area-div1 {
     padding-top: 55px;
   }
@@ -97,17 +109,51 @@
 
   .exp-txt {
     width: 100%;
-    font-size: 30px;
     margin-bottom: 15px;
   }
 
   .exp {
-    width: 100%;
+    width: 330px;
   }
 
   .more-prac-area {
     margin: 30px 10px 0;
   }
+
+  /* --- Image Slider --- */
+
+  .slider-main-heading {
+    margin: 22px 0;
+  }
+
+  .slider-text {
+    width: 325px;
+  }
+
+  /* --- -- - Experties - -- --- */
+
+  .experties-card {
+    flex-wrap: wrap;
+  }
+
+  .exp-card-2 {
+    margin-right: 0;
+  }
+
+  .exp-card {
+    width: 335px;
+    padding-right: 35px;
+  }
+
+  #consultation {
+    margin-top: 50px;
+  }
+
+  .cons-heading {
+    width: 90%;
+  }
+
+  /*  */
 }
 
 @media screen and (max-width: 770px) {
@@ -130,7 +176,8 @@
   }
 
   /* Practice Area */
-  .prac-justice-width {
+
+  .justice-width {
     max-width: 535px;
     padding: 0 15px;
     box-sizing: border-box;
@@ -147,15 +194,33 @@
   .exp-detail {
     width: 100%;
   }
+
+  /* --- -- Image Slider -- --- */
+  .slider-text {
+    width: 100%;
+  }
+
+  /* --- -- - Experties - -- --- */
+
+  .exp-card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cons-heading {
+    width: 101%;
+  }
+
+  /*  */
 }
 
 @media screen and (max-width: 550px) {
   /* Navbar */
 
   .navbar {
-    width: 100%;
+    width: 98%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   /* Home */
@@ -164,6 +229,10 @@
     width: 100%;
     box-sizing: border-box;
     padding: 212px 15px;
+  }
+
+  .justice-width {
+    max-width: 100%;
   }
 }
 
