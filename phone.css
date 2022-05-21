@@ -153,6 +153,17 @@
     width: 90%;
   }
 
+  /* --- -- - footer - -- --- */
+
+  .footer {
+    display: block;
+  }
+
+  .footer-list {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   /*  */
 }
 

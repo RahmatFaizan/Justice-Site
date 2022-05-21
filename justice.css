@@ -637,7 +637,6 @@ img.slider-user-img {
 
 .experties {
   background-color: #37373f;
-  padding: 80px 0;
 }
 
 .experties-card {
@@ -746,4 +745,67 @@ img.slider-user-img {
   color: var(--bg-white);
   width: 550px;
   text-align: center;
+}
+
+/* --- -- - Footer - -- --- */
+
+.footer {
+  padding: 50px 0;
+  display: flex;
+}
+
+.footer-list {
+  width: 25%;
+}
+
+.footer-a.footer-active {
+  color: var(--bg-light-grey);
+  text-decoration: none;
+}
+
+.footer-a {
+  color: var(--bg-primary);
+  margin: 8px 0;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #b49c7325;
+  transition: 0.3s;
+}
+
+.footer-a:hover {
+  color: var(--bg-light-grey);
+  text-decoration-color: var(--bg-primary);
+}
+
+.connect {
+  margin-top: 25px;
+}
+
+.footer-icon {
+  width: var(--f-size-30);
+  height: var(--f-size-30);
+  display: inline-block;
+  color: #fff;
+  background-color: var(--bg-primary);
+  text-align: center;
+  line-height: var(--f-size-30);
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+.footer-icon:hover {
+  background-color: #c9b38e;
+}
+
+.copy-right {
+  color: var(--text-color);
+  text-align: center;
+  padding: 60px 0;
+}
+
+.copy-right span {
+  color: #dc3545;
+  font-size: 18px;
 }
