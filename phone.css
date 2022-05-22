@@ -143,6 +143,7 @@
   .exp-card {
     width: 335px;
     padding-right: 35px;
+    margin-right: 0;
   }
 
   #consultation {

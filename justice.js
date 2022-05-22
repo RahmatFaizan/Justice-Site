@@ -1,5 +1,58 @@
 /* ---- --- JavaScript --- ----*/
 
+/*  ---- --- -- - On reload Transition / Animation - -- --- ---- */
+
+document.querySelector(".home-heading").classList.add("translate-0-perc");
+document.querySelector(".home-para-div").classList.add("translate-0-perc");
+document.querySelector(".home-btn").classList.add("translate-0-perc");
+
+//
+
+let justiceTranslate = document.querySelectorAll(".justice-translate");
+let consultationID = document.querySelector("#consultation");
+let consultation = document.querySelector(".consultation");
+
+//
+//
+
+justiceTranslate.forEach((e) => {
+  var expTop = e.offsetTop - 550;
+  if (scrollY >= expTop) {
+    e.classList.add("translate-0-perc");
+    //
+  } else {
+  }
+});
+
+if (scrollY >= consultationID.offsetTop - 550) {
+  consultation.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+}
+
+//
+
+window.addEventListener("scroll", () => {
+  //
+
+  justiceTranslate.forEach((e) => {
+    var expTop = e.offsetTop - 550;
+    if (scrollY >= expTop) {
+      e.classList.add("translate-0-perc");
+      //
+    } else {
+    }
+  });
+
+  //
+
+  if (scrollY >= consultationID.offsetTop - 550) {
+    consultation.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+  }
+
+  //
+});
+
+// End's
+
 //
 
 const hamburger = document.querySelector(".hamburger");
@@ -122,3 +175,22 @@ var swiper = new Swiper(".mySwiper", {
 
   //
 });
+
+/* --- -- - Justice Law - -- --- */
+
+/* Opacity Changing */
+
+let justiceLaw = document.querySelectorAll(".justice-law");
+
+justiceLaw.forEach((e) => {
+  e.addEventListener("mouseenter", () => {
+    e.style.opacity = "1";
+  });
+  e.addEventListener("mouseleave", () => {
+    e.style.opacity = "";
+  });
+});
+
+// Hide Preloader
+
+document.getElementById("preloader").classList.add("hide-preloader");
